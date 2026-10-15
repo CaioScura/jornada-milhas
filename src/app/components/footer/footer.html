@@ -1,1 +1,29 @@
-<p>footer works!</p>
+<footer class="app-footer">
+    <app-container>
+        <div class="content">
+            <div class="info">
+                <img src="assets/images/logo-footer.png" alt="Logo" class="logo">
+                <span class="spacer"></span>
+                <span>Horário de atendimento: 08h - 20h (Segunda a Sábado)</span>
+                <span>Desenvolvido por Alura. Projeto fictício sem fins comerciais.</span>
+            </div>
+
+            <div class="sociais">
+                <span>Acesse nossas redes:</span>
+                
+                <div class="icons-sociais">
+                    <button mat-icon-button>
+                        <fa-icon [icon]="faWhatsapp"></fa-icon>
+                    </button>
+                    <button mat-icon-button>
+                        <fa-icon [icon]="faInstagram"></fa-icon>
+                    </button>
+                    <button mat-icon-button>
+                        <fa-icon [icon]="faDiscord"></fa-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </app-container>
+    
+</footer>
