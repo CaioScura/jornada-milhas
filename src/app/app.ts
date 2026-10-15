@@ -10,7 +10,7 @@ import { Header } from './components/header/header';
     RouterOutlet,
     MatToolbarModule,
     MatButtonModule,
-    Header
+    Header,
 ],
   templateUrl: './app.html',
   styleUrl: './app.scss'

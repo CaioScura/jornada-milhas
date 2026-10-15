@@ -1,0 +1,8 @@
+//vai pegar o host do componente e aplicar as estilizações nele
+//ou seja, vai pegar o componente container e aplicar as estilizações nele
+:host{
+    display: block;
+    margin: 0 auto;
+    max-width: 1048px;
+    width: 90%;
+}
