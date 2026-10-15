@@ -1,0 +1,32 @@
+@use '@angular/material' as mat;
+
+.app-header{
+    button{
+        margin: 0 16px;
+    }
+
+    .matButton{
+        color: white;
+    }
+
+    .spacer {
+        flex: 1 1 auto;
+    }
+
+    .mat-toolbar {
+        background-color: black;
+        color: white;
+        padding: 0 256px;
+    }
+
+    .mat-mdc-outlined-button:not(:disabled) {
+        border-color: white;
+        color: white;
+    }
+}
+
+.app-header {
+  @include mat.toolbar-overrides((
+    container-text-color: white,
+  ));
+}
