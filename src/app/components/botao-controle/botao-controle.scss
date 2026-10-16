@@ -1,0 +1,32 @@
+button {
+  // círculo de 48px com o ícone centralizado; sem fundo até passar o mouse
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #1D1B20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  // contorno visível ao navegar pelo teclado (Tab)
+  &:focus-visible {
+    outline: 2px solid #6750A4;
+    outline-offset: 2px;
+  }
+}
+
+// ao passar o mouse ou clicar, aparece o círculo colorido
+.decrementar:hover,
+.decrementar:active {
+  background: #D9D9D9;
+}
+
+.incrementar:hover,
+.incrementar:active {
+  background: #E8DEF8;
+}

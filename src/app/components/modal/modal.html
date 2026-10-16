@@ -1,0 +1,54 @@
+<section class="modal">
+    <h2 mat-dialog-title>Viajante</h2>
+
+    <mat-dialog-content>    
+        <div class="selecao-idade">
+
+            <div class="faixa-etaria">
+                <span class="titulo">Adultos</span>
+                <span class="descricao">(Acima de 12 anos)</span>
+                <div class="btn-idd">
+                    <app-botao-controle operacao="decrementar"></app-botao-controle>
+                    <span class="number">1</span>
+                    <app-botao-controle operacao="incrementar"></app-botao-controle>
+                </div>
+            </div>
+
+            <div class="faixa-etaria">
+                <span class="titulo">Crianças</span>
+                <span class="descricao">(Entre 2 e 11 anos)</span>
+                <div class="btn-idd">
+                    <app-botao-controle operacao="decrementar"></app-botao-controle>
+                    <span class="number">1</span>
+                    <app-botao-controle operacao="incrementar"></app-botao-controle>
+                </div>
+            </div>
+
+            <div class="faixa-etaria">
+                <span class="titulo">Bebês</span>
+                <span class="descricao">(Até 2 anos)</span>
+                <div class="btn-idd">
+                    <app-botao-controle operacao="decrementar"></app-botao-controle>
+                    <span class="number">1</span>
+                    <app-botao-controle operacao="incrementar"></app-botao-controle>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="selecao-categoria">
+            <span class="titulo">Categoria</span>
+            <mat-chip-listbox aria-label="Seleção de passagens">
+                <mat-chip-option selected>Econômica</mat-chip-option>
+                <mat-chip-option>Executiva</mat-chip-option>
+            </mat-chip-listbox>
+        </div>
+    </mat-dialog-content>
+
+    <mat-dialog-actions class="modal-actions">
+        <button matButton mat-dialog-close>Cancelar</button>
+        <button matButton="filled">Aplicar</button>
+    </mat-dialog-actions>
+
+</section>

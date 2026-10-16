@@ -1,0 +1,7 @@
+<button
+  type="button"
+  [class]="operacao"
+  [attr.aria-label]="operacao === 'incrementar' ? 'Adicionar' : 'Remover'"
+  (click)="acionado.emit()">
+  <mat-icon fontSet="material-symbols-outlined">{{ operacao === 'incrementar' ? 'add_circle' : 'do_not_disturb_on' }}</mat-icon>
+</button>

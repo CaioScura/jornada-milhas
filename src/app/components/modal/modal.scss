@@ -1,0 +1,67 @@
+.modal {
+  border: 1px solid #1D1B20;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .selecao-idade {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    .faixa-etaria {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      color: #1D1B20;
+
+
+      .btn-idd {
+        display: flex;
+        align-items: center;
+
+        .number {
+          padding: 0 12px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+
+  // o espaço abaixo do título vem do gap do pai (.faixa-etaria e .selecao-categoria)
+  .titulo {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  .descricao {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .selecao-categoria {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 32px;
+    color: #1D1B20;
+  }
+
+  .modal-actions {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    margin-bottom: 20px;
+
+    button.mat-mdc-button-base {
+      width: 50%;
+      margin: 0;
+    }
+  }
+}
